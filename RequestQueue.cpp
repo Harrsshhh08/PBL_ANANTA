@@ -80,7 +80,7 @@ bool RequestQueue::loadFromFile() {
         char* id = strtok(line, "|"); char* sender = strtok(0, "|"); char* receiver = strtok(0, "|"); char* topic = strtok(0, "|"); char* status = strtok(0, "|");
         if (!id || !sender || !receiver || !topic || !status) continue;
         LearningRequest* node = new LearningRequest;
-        node->id = atoi(id); node->senderId = atoi(sender); node->receiverId = atoi(receiver); strncpy(node->topic, topic, 49); node->topic[49] = '\0'; node->status = static_cast<RequestStatus>(atoi(status)); node->next = 0;
+        node->id = atoi(id); node->senderId = atoi(sender); node->receiverId = atoi(receiver); strncpy(node->topic, topic, 49); node->topic[49] = '\0'; node->status = (RequestStatus)atoi(status); node->next = 0;
         if (!rear) front = rear = node; else { rear->next = node; rear = node; }
         if (node->id >= nextId) nextId = node->id + 1;
     }

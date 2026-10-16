@@ -5,9 +5,7 @@
 
 using namespace std;
 
-namespace {
 const char* STUDENT_FILE = "students.txt";
-}
 
 bool FileStorage::saveStudents(const Student students[], int count) {
     ofstream file(STUDENT_FILE);

@@ -1,0 +1,3 @@
+101|Aarav Sharma|CSE|3|aarav|pass123|C++|0
+102|Diya Singh|CSE|4|diya|pass123|Python|0
+103|Kabir Khan|CSE|3|kabir|pass123|Data Structures|0

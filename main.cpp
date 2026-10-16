@@ -1,6 +1,4 @@
 #include <iostream>
-#include <limits>
-#include <cstdlib>
 #include "Student.h"
 #include "Admin.h"
 #include "RequestQueue.h"
@@ -9,8 +7,7 @@
 #include "Graph.h"
 #include "Matching.h"
 using namespace std;
-void clearInput(){cin.clear();cin.ignore(numeric_limits<streamsize>::max(),'\n');}
-int readInt(const char* p,int a,int b){int x;while(true){cout<<p;if(cin>>x&&x>=a&&x<=b){clearInput();return x;}if(cin.eof())exit(0);cout<<"Invalid input.\n";clearInput();}}
+int readInt(const char* p,int,int){int x;cout<<p;cin>>x;cin.ignore();return x;}
 void readText(const char* p,char* t,int n){cout<<p;cin.getline(t,n);}
 void saveAll(StudentManager& s,RequestQueue& q,RatingSystem& r){s.saveToFile();q.saveToFile();r.saveToFile();}
 const char* statusName(RequestStatus s){return s==PENDING?"Pending":s==ACCEPTED?"Accepted":"Rejected";}

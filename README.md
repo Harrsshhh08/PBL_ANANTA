@@ -1,6 +1,4 @@
-# PeerLearn — File-Based Version
-
-This is a separate PeerLearn project. It uses simple manual graph and tree modules, but does not use hashing or STL containers.
+# PeerLearn 
 
 ## Completion status
 

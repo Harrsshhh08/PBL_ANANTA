@@ -2,7 +2,7 @@
 
 ## Completion status
 
-Approximately **90% of this file-based version** is complete.
+Approximately **60% of this file-based version** is complete.
 
 Completed features:
 

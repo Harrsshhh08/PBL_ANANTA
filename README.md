@@ -89,6 +89,3 @@ g++ -std=c++11 -Wall -Wextra -pedantic main.cpp Student.cpp FileStorage.cpp Requ
 .\PeerLearnFileBased.exe
 ```
 
-## Verification note
-
-The installed MinGW compiler currently fails to start with an `Illegal System DLL Relocation` error. The code has been manually reviewed, but successful compilation has not yet been confirmed.
